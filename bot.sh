@@ -1,0 +1,1 @@
+./bin/setzer bot --config setzer.conf
