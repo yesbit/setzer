@@ -1,1 +1,1 @@
-./bin/setzer bot --config setzer.conf
+./bin/setzer bot --config ./.config/setzer.conf

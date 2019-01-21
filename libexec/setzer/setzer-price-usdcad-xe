@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -ex
+json=$(curl -sS --user $XE_USERNAME:$XE_PASSWORD "https://xecdapi.xe.com/v1/historic_rate.json/?from=USD&to=CAD")
+price=$(jshon <<<"$json" -e to -e 0 -e mid -u)
+echo "$price"
